@@ -189,7 +189,7 @@ export default function UniswapInterface() {
       const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY || '';
       const signer = new ethers.Wallet(privateKey, provider);
       const signerAddress = await signer.getAddress();
-      const uniswapContractAddress = "0x40b694c75b4e509aa8cbe9993a37af9546ce36e8";
+      const uniswapContractAddress="0x6a604e0956713f80c513956ecdd09807769e453b";
       const uniswapContract = new ethers.Contract(uniswapContractAddress, IUniswapV2, signer);
       console.log("contract", uniswapContract);
       setContract(uniswapContract);
