@@ -25,7 +25,7 @@ sol_storage! {
 #[public]
 #[inherit(UniswapV2ERC20<UniswapV2PairParams>)]
 impl UniswapV2Pair {
-    pub fn initialize(&mut self, token0: Address, token1: Address, fee_to: Address) -> Result<(), Vec<u8>> {
+    pub fn initialize_ManishkumarDamor_24_(&mut self, token0: Address, token1: Address, fee_to: Address) -> Result<(), Vec<u8>> {
         if self.token0.get() != Address::ZERO {
             return Err("Already initialized".into());
         }
